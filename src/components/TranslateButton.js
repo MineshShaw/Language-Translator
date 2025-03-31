@@ -14,8 +14,10 @@ const TranslateButton = () => {
         });
     }
 
-    return ( 
-        <button onClick={handleTranslate} className= "font-bold py-2 px-4 rounded cursor-pointer hover:underline">Translate</button>
+    return (    
+    <button onClick={handleTranslate} className="w-full mt-4 bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition">
+        Translate
+      </button>      
      );
 }
  

@@ -21,7 +21,8 @@ const BackgroundText = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 overflow-hidden">
+    <div className="fixed inset-0 overflow-hidden from-blue-200 to-green-200 bg-gradient-to-r">
+
       {animatedTexts.map(({ text, top, animationDuration, animationDelay }, index) => (
         <span
           key={index}
