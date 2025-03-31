@@ -27,18 +27,24 @@ const InputBar = () => {
     <>
       <div className="input-bar flex flex-col items-center justify-center mb-4">
         <input
+          className="input rounded-full px-8 py-3 border-2 border-transparent focus:outline-none focus:border-blue-500 placeholder-gray-400 transition-all duration-300 shadow-md"
+          placeholder="Enter text to translate..."
+          required
           type="text"
-          placeholder="Type a message..."
           value={inputText}
           onChange={handleInputChange}
-          className="border-2 border-gray-300 rounded-lg p-2 mb-4 w-full max-w-md"
-          style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
         />
-        <label htmlFor="sourceLang">Source Language:</label>
+        <label
+          htmlFor="sourceLang"
+          className="block text-lg font-medium text-gray-700"
+        >
+          Source Language:
+        </label>
         <select
           id="sourceLang"
           value={sourceLang}
           onChange={handleSourceChange}
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-base"
         >
           {languages.map((lang) => (
             <option key={lang.code} value={lang.code}>
@@ -47,11 +53,17 @@ const InputBar = () => {
           ))}
         </select>
 
-        <label htmlFor="targetLang">Target Language:</label>
+        <label
+          htmlFor="targetLang"
+          className="block text-lg font-medium text-gray-700"
+        >
+          Target Language:
+        </label>
         <select
           id="targetLang"
           value={targetLang}
           onChange={handleTargetChange}
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-base"
         >
           {languages.map((lang) => (
             <option key={lang.code} value={lang.code}>

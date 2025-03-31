@@ -15,7 +15,7 @@ const TranslateButton = () => {
     }
 
     return ( 
-        <button onClick={handleTranslate}>Translate</button>
+        <button onClick={handleTranslate} className= "font-bold py-2 px-4 rounded cursor-pointer hover:underline">Translate</button>
      );
 }
  

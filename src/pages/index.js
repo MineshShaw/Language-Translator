@@ -11,10 +11,16 @@ const Home = () => {
       <div className="relative h-screen w-screen flex items-center justify-center">
         <Background />
         <div className="z-10 border-2 p-4 rounded-lg backdrop-blur-md flex flex-col items-center justify-center">
-          <h1 className="text-2xl font-bold mb-4">Language Translator</h1>
-          <InputBar />
-          <TranslateButton />
-          <OutputBox />
+        <h1 className="text-2xl font-bold mb-4">Language Translator</h1>
+          <div className="container">
+            <div className="left flex flex-col items-center justify-center mb-4">
+              <InputBar />
+              <TranslateButton />
+            </div>
+            <div className="right">
+              <OutputBox />
+            </div>
+          </div>
         </div>
       </div>
     </LanguageProvider>
