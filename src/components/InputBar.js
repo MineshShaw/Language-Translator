@@ -42,7 +42,7 @@ const InputBar = () => {
             onChange={handleInputChange}
           />
         </div>
-        <div>
+        <div className="w-full flex flex-col items-center justify-center mb-4">
           <label
             htmlFor="sourceLang"
             className="block text-lg font-medium text-gray-700"
@@ -62,7 +62,7 @@ const InputBar = () => {
             ))}
           </select>
         </div>
-        <div>
+        <div className="w-full flex flex-col items-center justify-center mb-4">
           <label
             htmlFor="targetLang"
             className="block text-lg font-medium text-gray-700"
