@@ -3,7 +3,6 @@ import InputBar from "@/components/InputBar";
 import OutputBox from "@/components/OutputBox";
 import TranslateButton from "@/components/TranslateButton";
 import { LanguageProvider } from "@/context/languagesContext";
-import "../styles/globals.css";
 
 const Home = () => {
   return (
